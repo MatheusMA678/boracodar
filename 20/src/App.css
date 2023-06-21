@@ -1,0 +1,43 @@
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "d d"
+    "e f"
+    "g f"
+    "h h";
+}
+
+.gallery div:nth-child(1) {
+  grid-area: a;
+}
+
+.gallery div:nth-child(2) {
+  grid-area: b;
+}
+
+.gallery div:nth-child(3) {
+  grid-area: c;
+}
+
+.gallery div:nth-child(4) {
+  grid-area: d;
+}
+
+.gallery div:nth-child(5) {
+  grid-area: e;
+}
+
+.gallery div:nth-child(6) {
+  grid-area: f;
+}
+
+.gallery div:nth-child(7) {
+  grid-area: g;
+}
+
+.gallery div:nth-child(8) {
+  grid-area: h;
+}

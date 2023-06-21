@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Player</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/global.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <aside>
+        <button class="btn-active" title="Play">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+        <button title="Acessibilidade">
+          <ion-icon name="accessibility-outline"></ion-icon>
+        </button>
+        <button title="Playlist">
+          <ion-icon name="albums-outline"></ion-icon>
+        </button>
+        <button title="Buscar">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </aside>
+
+      <div>
+        <header>
+          <div class="left-header">
+            <button
+              class="btn-active"
+              id="sidebarBtn"
+              title="Ativar/Desativar Sidebar"
+            >
+              <img
+                src="./src/assets/sidebar-icon.svg"
+                alt="sidebar icon"
+                height="24"
+                width="24"
+              />
+            </button>
+
+            <button title="Voltar">
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>
+
+            <button title="Avançar">
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+          </div>
+
+          <div class="link-container">
+            <button title="Traduzir">
+              <ion-icon name="text"></ion-icon>
+            </button>
+            <div class="input-wrapper">
+              <ion-icon title="Site seguro" name="lock-closed"></ion-icon>
+              <!-- <span>rocketseat.com</span> -->
+              <span>youtube.com</span>
+            </div>
+            <button title="Recarregar">
+              <ion-icon name="refresh"></ion-icon>
+            </button>
+          </div>
+
+          <div class="right-header">
+            <button title="Compartilhar">
+              <ion-icon name="share-outline"></ion-icon>
+            </button>
+            <button title="Nova Guia">
+              <ion-icon name="add-outline"></ion-icon>
+            </button>
+            <button title="Mostrar Guias">
+              <ion-icon name="copy-outline"></ion-icon>
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <div class="gradient-border"></div>
+          <!-- <iframe
+            width="960"
+            height="540"
+            src="https://www.youtube.com/embed/uL6nu0-zhu0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe> -->
+          <iframe
+            width="960"
+            height="540"
+            src="https://www.youtube.com/embed/JI4dI6jtx6Q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </main>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
